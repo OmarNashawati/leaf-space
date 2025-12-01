@@ -1,0 +1,53 @@
+@use './base.scss';
+
+#app {
+  max-width: 1440px;
+  margin: 0 auto;
+  position: relative;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+}
+
+.text-accent {
+  color: var(--accent);
+}
+
+.section {
+  text-align: center;
+  padding: 4rem;
+
+  .section-title {
+    margin-bottom: 1rem;
+    font-size: 1.7rem;
+  }
+
+  .section-description {
+    max-width: 500px;
+    margin: 0 auto;
+    color: var(--text-soft);
+  }
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 2rem;
+
+    .section-title {
+      font-size: 1.3rem;
+    }
+
+    .section-description {
+      max-width: 100%;
+    }
+  }
+}
